@@ -44,11 +44,11 @@ K3d
 
 
 ## Демонстрація:
-* Minicude
+
 [Minikube](./img/minikube.gif)
-* Kind
+
 [Kind](./img/kind.gif)
-* K3d
+
 [K3d](./img/k3d.gif)
 ## Висновки
 
