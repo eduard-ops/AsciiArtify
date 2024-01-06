@@ -45,7 +45,7 @@ K3d
 
 ## Демонстрація:
 * Minicude
-![Minikube](/AsciiArtify/img/minikube.gif)
+![Minikube](../img/minikube.gif)
 * Kind
 ![Kind](/AsciiArtify/img/kind.gif)
 * K3d
