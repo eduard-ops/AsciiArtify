@@ -47,9 +47,9 @@ K3d
 
 [Minikube](https://asciinema.org/a/630145)
 
-[Kind](./img/kind.gif)
+[Kind](https://asciinema.org/a/QKii54gJW4jeciMgsE9MgGdgg)
 
-[K3d](./img/k3d.gif)
+[K3d](https://asciinema.org/a/b6unxugOwaTnwSqYDDoKkVxiD)
 ## Висновки
 
 ### Minikube
