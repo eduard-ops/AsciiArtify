@@ -45,7 +45,7 @@ K3d
 
 ## Демонстрація:
 
-[Minikube](./img/minikube.gif)
+[Minikube](https://asciinema.org/a/630145)
 
 [Kind](./img/kind.gif)
 
