@@ -45,11 +45,11 @@ K3d
 
 ## Демонстрація:
 * Minicude
-![Minikube](../img/minikube.gif)
+![Minikube](./img/minikube.gif)
 * Kind
-![Kind](/AsciiArtify/img/kind.gif)
+![Kind](./img/kind.gif)
 * K3d
-![K3d](/AsciiArtify/img/k3d.gif)
+![K3d](./img/k3d.gif)
 ## Висновки
 
 ### Minikube
