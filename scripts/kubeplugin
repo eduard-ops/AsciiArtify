@@ -1,16 +1,22 @@
 #!/bin/bash
 
-# Check if namespace argument is provided
-if [ -z "$1" ]; then
-    echo "Usage: $0 <namespace>"
-    exit 1
-fi
+# To install the plugin
+#sudo chmod +x ./scripts/kubectl-kubeplugin
 
-# Set the namespace
+#and place it anywhere in your PATH:
+#sudo mv ./kubectl-kubeplugin /usr/local/bin
+
+# Usage: kubectl kubeplugin <namespace> <resource>
+# example: kubectl kubeplugin kube-system pod
+# metrics-service should be available
+
+
+# Define command-line arguments
 NAMESPACE=$1
+RESOURCE_TYPE=$2
 
 # Retrieve resource usage statistics from Kubernetes
-kubectl get pods --namespace="$NAMESPACE" -o custom-columns=NAME:.metadata.name,CPU:.spec.containers[*].usage.cpu,MEMORY:.spec.containers[*].usage.memory --no-headers | while read -r line
+kubectl top $RESOURCE_TYPE -n $NAMESPACE | tail -n +2 | while read -r line
 do
   # Extract CPU and memory usage from the output
   NAME=$(echo "$line" | awk '{print $1}')
@@ -18,6 +24,5 @@ do
   MEMORY=$(echo "$line" | awk '{print $3}')
 
   # Output the statistics to the console
-  echo "Resource, Namespace, Name, CPU, Memory"
-  echo "Pod, $NAMESPACE, $NAME, $CPU, $MEMORY"
+  echo "$RESOURCE_TYPE, $NAMESPACE, $NAME, $CPU, $MEMORY"
 done
