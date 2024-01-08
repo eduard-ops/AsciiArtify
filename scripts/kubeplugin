@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-# Usage: bash scripts/kubeplugin.sh <namespace> <resource>
-# example: bash kubeplugin.sh kube-system pod
+# Usage: bash scripts/kubeplugin <namespace> <resource>
+# example: bash kubeplugin kube-system pod
 # metrics-service should be available by column
 
 # Define command-line arguments
